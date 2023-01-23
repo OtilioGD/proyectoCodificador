@@ -15,6 +15,12 @@ function btnDesencriptar(){
     mensaje.style.backgroundImage = "none";
 }
 
+function copiar() {
+    const copyText = document.querySelector(".mensaje");
+    copyText.select();
+    document.execCommand("copy");
+  }
+
 function encriptar(stringEncriptada){
 
     let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
